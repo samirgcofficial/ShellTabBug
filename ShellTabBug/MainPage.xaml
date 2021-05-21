@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:views="clr-namespace:ShellTabBug.Pages"
+             x:Class="ShellTabBug.MainPage">
+    <TabBar>
+       <Tab Title="Cats" x:Name="MyCatsPage"
+            Icon="cat.png">
+           <ShellContent ContentTemplate="{DataTemplate views:CatsPage}" />
+       </Tab>
+       <Tab Title="Dogs" x:Name="MyDogPage" 
+            Icon="dog.png">
+           <ShellContent ContentTemplate="{DataTemplate views:DogsPage}" />
+       </Tab>
+    </TabBar>
+
+</Shell>
